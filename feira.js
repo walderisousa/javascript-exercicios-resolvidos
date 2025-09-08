@@ -6,7 +6,7 @@ total
 
 const prompt = require('prompt-sync')()
 const preco = {
-    maca: 6.20,
+    maçã: 6.20,
     banana: 5.20,
     laranja: 4.99,
     manga: 6.99,
@@ -37,11 +37,15 @@ console.log(`
     +               PARA MAMÃO USE --> MAMAO     +
     +               PARA MELÃO USE --> MELAO     +
     + ++++++++++++++++++++++++++++++++++++++++++ +
-    `)
-let frutas =  prompt('Digite a fruta que você deseja: ')
+    `);
 
-switch(frutas.toLowerCase){
-    case maca:
-        const preco_maca = 5.99
-        console.log('O preço da maçã está R$' + preco_maca + '/Kg')
+let frutas = prompt('Digite a fruta que você deseja: ')
+
+switch(frutas) {
+    case 'maca':
+        console.log('O preço da maçã está R$' + preco.maçã + '/Kg')
+        break;
+
+    default:
+        console.log('Fruta não encontrada ou em falta no estoque.')
 }
