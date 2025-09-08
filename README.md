@@ -1,2 +1,5 @@
-# javascript-exercicios-resolvidos
-Repositório para apresentação da ativade em grupo do dia 08/09, turmo 01 GO C1 - BFD
+# Repositório de Exercícios de JavaScript
+
+Bem-vindo à nossa coleção de exercícios resolvidos de JavaScript! 
+
+## Lista de Exercícios:
