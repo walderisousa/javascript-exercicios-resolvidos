@@ -55,8 +55,10 @@ frutas = prompt('Digite a fruta que você deseja: ')
 switch(frutas.toLowerCase()) {
     case 'maca':
         fruta = 'maçã'
-        console.log(`O preço da ${fruta} está R$` + preco.maca.toFixed(2) + '/Kg')
-        qtd = parseInt(prompt(`Quantas unidades de ${fruta} você quer? Digite: `))
+        console.log(`
+O preço da ${fruta} está R$` + preco.maca.toFixed(2) + '/Kg')
+        qtd = parseInt(prompt(`
+Quantas unidades de ${fruta} você quer? Digite apenas o número: `))
         peso_fruta = peso.maca
         preco_fruta = preco.maca
         peso_total = peso_fruta * qtd
@@ -64,12 +66,16 @@ switch(frutas.toLowerCase()) {
         break;
 
     case 'banana':
-        console.log('O preço da banana está R$' + preco.banana + '/Kg')
+        console.log(`
+O preço da banana está R$` + preco.banana + '/Kg')
 
 
     default:
-        console.log('Fruta não encontrada ou em falta no estoque.')
+        console.log(`
+Fruta não encontrada ou em falta no estoque.`)
 }
 
 
-console.log('O preço total ficou R$' + preco_total.toFixed(2)) //Preço vindo com infinitos números
+console.log(`
+O preço total ficou R$` + preco_total.toFixed(2) + `
+`)
