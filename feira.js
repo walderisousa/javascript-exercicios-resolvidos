@@ -9,16 +9,7 @@ let peso_fruta
 let preco_fruta
 let preco_total
 let peso_total
-let maca
-let banana
-let laranja
-let manga
-let mamao
-let melancia
-let abacaxi
-let pera
-let uva
-let melao
+let fruta
 let qtd
 let frutas
 
@@ -63,10 +54,9 @@ frutas = prompt('Digite a fruta que você deseja: ')
 
 switch(frutas.toLowerCase()) {
     case 'maca':
-        maca = 'maçã'
-        console.log(`O preço da ${maca} está R$` + preco.maca.toFixed(2) + '/Kg')
-        qtd = parseInt(prompt(`Quantas unidades de ${maca} você quer? Digite: `))
-
+        fruta = 'maçã'
+        console.log(`O preço da ${fruta} está R$` + preco.maca.toFixed(2) + '/Kg')
+        qtd = parseInt(prompt(`Quantas unidades de ${fruta} você quer? Digite: `))
         peso_fruta = peso.maca
         preco_fruta = preco.maca
         peso_total = peso_fruta * qtd
