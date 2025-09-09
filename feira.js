@@ -3,10 +3,27 @@ mostre o preço da que fruta seja por quilo ou o que seja (unidade, bandeja,
 etc.), depois pergunte quantas unidades ele quer e por fim mostre o valor
 total
 */
+const prompt = require('prompt-sync')();
 
-const prompt = require('prompt-sync')()
+let peso_fruta
+let preco_fruta
+let preco_total
+let peso_total
+let maca
+let banana
+let laranja
+let manga
+let mamao
+let melancia
+let abacaxi
+let pera
+let uva
+let melao
+let qtd
+let frutas
+
 const preco = {
-    maçã: 6.20,
+    maca: 6.20,
     banana: 5.20,
     laranja: 4.99,
     manga: 6.99,
@@ -33,19 +50,36 @@ const peso = {
 
 console.log(`
     + ++++++++++++++++++++++++++++++++++++++++++ +
-    +     [ATENÇÃO] PARA MAÇÃ USE --> MACA       +
+    +     [ATENÇÃO] NÃO É POSSÍVEL UTILIZAR Ç    +
+    +               NEM ACENTOS, SENDO ASSIM:    +
+    +                                            +
+    +               PARA MAÇÃ USE --> MACA       +
     +               PARA MAMÃO USE --> MAMAO     +
     +               PARA MELÃO USE --> MELAO     +
     + ++++++++++++++++++++++++++++++++++++++++++ +
     `);
 
-let frutas = prompt('Digite a fruta que você deseja: ')
+frutas = prompt('Digite a fruta que você deseja: ')
 
-switch(frutas) {
+switch(frutas.toLowerCase()) {
     case 'maca':
-        console.log('O preço da maçã está R$' + preco.maçã + '/Kg')
+        maca = 'maçã'
+        console.log(`O preço da ${maca} está R$` + preco.maca.toFixed(2) + '/Kg')
+        qtd = parseInt(prompt(`Quantas unidades de ${maca} você quer? Digite: `))
+
+        peso_fruta = peso.maca
+        preco_fruta = preco.maca
+        peso_total = peso_fruta * qtd
+        preco_total = preco_fruta * peso_total
         break;
+
+    case 'banana':
+        console.log('O preço da banana está R$' + preco.banana + '/Kg')
+
 
     default:
         console.log('Fruta não encontrada ou em falta no estoque.')
 }
+
+
+console.log('O preço total ficou R$' + preco_total.toFixed(2)) //Preço vindo com infinitos números
