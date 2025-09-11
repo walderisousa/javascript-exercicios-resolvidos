@@ -96,7 +96,7 @@ Quantas você deseja? Digite apenas o número: `))
 Peso total: ` + peso_total.toFixed(3) + `/Kg.`)
             prompt(`
 Aperte ENTER para continuar. `)
-            break;
+        break;
 
         case 'mamao':
             console.log(`
@@ -109,7 +109,7 @@ Quantas unidades você deseja? Digite apenas o número: `))
 Peso total: ` + peso_total.toFixed(3) + `/Kg.`)
             prompt(`
 Aperte ENTER para continuar. `)
-            break;
+        break;
 
         case 'melancia':
             console.log(`
@@ -122,7 +122,7 @@ Quantas melâncias você deseja?`))
 Peso total: ` + peso_total.toFixed(3) + `/Kg.`)
             prompt(`
 Aperte ENTER para continuar. `)
-            break;
+        break;
 
         case 'abacaxi':
             console.log(`
@@ -135,7 +135,7 @@ Quantas unidades você deseja? Digite apenas o número: `))
 Peso total: ` + peso_total.toFixed(3) + `/Kg.`)
             prompt(`
 Aperte ENTER para continuar. `)
-            break;
+        break;
 
         case 'pera':
             console.log(`
@@ -148,7 +148,7 @@ Quantas unidades de pera você deseja? Digite apenas o número: `))
 Peso total: ` + peso_total.toFixed(3) + `/Kg.`)
             prompt(`
 Aperte ENTER para continuar. `)
-            break;
+        break;
 
         case 'uva':
             console.log(`
@@ -157,7 +157,7 @@ O preço da bandeja da uva está R$` + preco.uva.toFixed(2) `.`)
             qtd = parseInt(prompt(`
 Quantas bandejas você deseja? Digite apenas o número: `))
             preco_total = preco.uva * qtd
-            break;
+        break;
 
         case 'melao':
             console.log(`
@@ -170,7 +170,7 @@ Quantos melões você deseja? Digite apenas o número: `))
 Peso total: ` + peso_total.toFixed(3) + `/Kg.`)
             prompt(`
 Aperte ENTER para continuar. `)
-            break;
+        break;
 
     default:
         console.log(`
