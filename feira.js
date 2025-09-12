@@ -162,7 +162,7 @@ Quantas bandejas você deseja? Digite apenas o número: `))
         case 'melao':
             console.log(`
 O preço do melão está R$` + preco.melao + `/Kg.`)
-            qtd = parent(prompt(`
+            qtd = parseInt(prompt(`
 Quantos melões você deseja? Digite apenas o número: `))
             peso_total = peso.melao * qtd
             preco_total = preco.melao * peso_total
@@ -182,7 +182,7 @@ if (preco_total === undefined){
 
 }else {
     console.log(`
-O preço total ficou R$` + preco_total.toFixed(2) + `.` + `
+O preço total ficou R$` + preco_total.toFixed(2) + `
 `)
     }
 

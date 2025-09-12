@@ -8,7 +8,7 @@ let numero1
 let numero2
 let result_final
 
-let opr = prompt(`Digite a operação que você deseja realizar. Use + - x ou /: `)
+let opr = prompt(`Digite a operação que você deseja realizar. Use + - * ou /: `)
 
 switch(opr){
     case '+':
@@ -38,25 +38,20 @@ switch(opr){
         numero2 = parseFloat(prompt(`Agora, digite o outro número: `))
         result = numero1 / numero2
     break;
-
     default:
         console.log('Número ou operação inválidos.')
 }
-result_final = result.toFixed(6)
-
-if (result_final.length === 0){
+if(nome_operacao === 'divisão' && numero2 === 0){
+    console.log(`
+Não é possível dividir por zero`)
+} else if (result_final.length >= 8){
     result_final = result
     console.log(`
 O resultado da sua ${nome_operacao} é ${result_final}.
 `)
-
-}else {
+    }else {
     console.log(`
 O resultado da sua ${nome_operacao} é ${result_final}.
 `)
 }
 
-
-// let algarismos = []
-// algarismos = [1, 0, 4, 0, 0, 0, 0, 0, 0]
-// algarismo = 104
