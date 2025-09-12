@@ -1,4 +1,7 @@
 //Execício 2
+/*
+Crie uma calculadora simples.
+*/
 
 const prompt = require('prompt-sync')()
 

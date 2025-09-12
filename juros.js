@@ -1,4 +1,7 @@
-//Exercício 3
+/*Exercício 3
+Elabore um algoritmo que pergunte o valor de um emprestimo e calcule o valor final
+bem como o valor de cada parcela e mostre na tela;
+*/
 
 const prompt = require('prompt-sync')()
 
